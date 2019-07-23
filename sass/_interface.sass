@@ -1,6 +1,14 @@
 body 
     +light
     color: $text-color
+.section
+    padding: 100px 0
+    &-title
+        font-size: 30px
+        +bold
+        text-align: center
+        text-transform: uppercase
+        margin-bottom: 100px
 .button-o
     text-transform: uppercase
     border: 2px solid $primary
@@ -44,5 +52,9 @@ input
 @media (max-width: 576px)
     .button-o
         font-size: 10px
-   
+@media (max-width: 991px) 
+    .section
+        padding: 60px 0
+        &-title
+            font-size: 24px
   
