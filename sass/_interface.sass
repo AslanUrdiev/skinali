@@ -1,6 +1,9 @@
 body 
     +light
     color: $text-color
+img
+    max-width: 100%
+    //картинка не может быть больше своего родителя
 .section
     padding: 100px 0
     &-title
@@ -17,6 +20,7 @@ body
     +bold
     color: $primary
     background-color: #fff
+    text-decoration: none
 .button 
     border: none
     padding: 25px 45px
@@ -24,6 +28,20 @@ body
     background-color: $primary
     +bold
     color: #fff
+    text-decoration: none
+    &-fitting
+        padding: 10px
+        font-size: 11px
+        text-transform: uppercase
+        color: $primary
+    &-add
+        background-color: lighten($primary, 10%)
+        padding: 10px
+    &-like  
+        background-color: $primary
+        border: none 
+        width: 30px
+
 
 .bg-secondary
     background-color: $bg-secondary
